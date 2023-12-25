@@ -1,0 +1,83 @@
+.cards{
+  position: relative;
+  border-radius: 10px;
+  height: 90%;
+}
+
+.prodImg{
+  position: relative;
+  width: 90px;
+  height: 73px;
+  top: 5px;
+  left: 20px;
+}
+
+
+.text{
+text-align: center;
+position: relative;
+top: 1px;
+height: 120px;
+}
+.text > #title{
+  position: relative;
+  top: 15%;
+  height: 19.2px;
+}
+
+.text > #brand{
+  position: relative;
+  top: 17px;
+}
+.text > #price{
+  position: relative;
+  top: 5%;
+}
+.text > #rat{
+  position: relative;
+  bottom: 7%;
+}
+
+.buyProd{
+position: relative;
+top: 0px;
+left: 28px;
+width: 30%;
+}
+
+button {
+  padding: 2% 70% 30% 30%;
+left: 6%;
+position: absolute;
+box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+cursor: pointer;
+background: black;
+color: white;
+border-radius: 6px;
+font-weight: bold;
+}
+
+a {
+  position: relative;
+  left: 30%;
+  top: 3px;
+}
+
+img {
+position: absolute;
+left: 0px;
+top: 20px;
+width: 100%;
+height: 100%;
+border-radius: 6px;
+}
+
+span{
+all: revert;
+position: relative;
+}
+
+.key{
+float: left;
+left: 5px;
+}

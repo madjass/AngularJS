@@ -1,0 +1,16 @@
+<ng-container>
+<div class = "cards">
+<div class = "prodImg">
+  <img src = "{{product?.thumbnail}}" alt= "Prod Pic">
+</div>
+<div class = "text">
+<p id = "title">{{product?.title}}</p>
+<p id = "brand"><span class= "key">Brand:</span> <span class= "value">{{product?.brand}}</span></p>
+<p id = "price"><span class= "key">Price:</span> <span class= "value">{{product?.price}}</span></p>
+<p id = "rat"><span class= "key">Ratings:</span> <span class= "value">{{product?.rating}}</span></p>
+</div>
+<div class = "buyProd">
+<button><a>Buy</a></button>
+</div>
+</div>
+</ng-container>

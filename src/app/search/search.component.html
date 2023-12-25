@@ -1,0 +1,16 @@
+<ng-container>
+<div class = "searchBox">
+<input class = "searchTxt" placeholder="Search for Products" (keyup.enter) = "search()" [(ngModel)] = "searchInput">
+</div>
+<div class="noDataMsg" *ngIf="!isSuccess">
+    <a>{{displayMsg}}</a>
+</div>
+<div class = "deck">
+  <div class = "grid">
+      <div class = "productCards"*ngFor = "let product of products">
+  <app-product-card [product] = "product"
+  ></app-product-card>
+    </div>
+  </div>
+</div>
+</ng-container>

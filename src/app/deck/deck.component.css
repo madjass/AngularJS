@@ -1,0 +1,9 @@
+.deck{
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  height: 400px;
+  width: 510px;
+  background: #7dd87d; 
+  border-radius: 50px;
+}

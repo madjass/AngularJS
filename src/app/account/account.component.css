@@ -1,0 +1,124 @@
+.acctPage{
+  position: relative;
+  top: 70px;
+height: 700px;
+}
+.acctForm{
+  position: absolute;
+left: 30%;
+height: 70%;
+top: 10%;
+border-width: 1px;
+background: #f8da5b;
+border-radius: 20px;
+}
+#persInfo{
+  position: relative;
+left: 30%;
+top: 5%;
+font-size: 30px;
+font-weight: bold;
+background-color: #eee;
+}
+.fields{
+position: relative;
+height: 550px;
+
+}
+.row1{
+  position: relative;
+  top: 5%;
+}
+.row2{
+  position: relative;
+  top: 10%;
+}
+.row3{
+  position: relative;
+  top: 15%;
+}
+.row4{
+  position: relative;
+  top: 20%;
+}
+.row5{
+  position: relative;
+  top: 25%;
+}
+#firstName{
+width: 40%;
+}
+#lastName{
+  left: 60%;
+position: absolute;
+width: 40%;
+}
+#email{
+width: 60%;
+}
+#address{
+width: 50%;
+}
+#apt{
+position: absolute;
+  left: 70%;
+  width: 20%;
+}
+#city{
+width: 30%;
+}
+#state{
+  position: relative;
+  width: 15%;
+  left: 16%;
+}
+#zipCd{
+  position: relative;
+  left: 30%;
+  width: 25%;
+}
+#gender{
+  padding: 5px;
+  width: 13%;
+}
+#dob{
+  position: relative;
+  left: 15%;
+  width: 25%;
+}
+#phone{
+  position: relative;
+  left: 28%;
+}
+button{
+  position: absolute;
+top: 80%;
+display: inline-block;
+right: 35%;
+cursor: pointer;
+border-radius: 8px;
+background: #f07810;
+border: 1px solid ##f07810;
+font-size: 15px;
+height: 35px;
+padding: 0 11px;
+text-align: center;
+width: 30%;
+color: white;
+border-color: #f07810;
+box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+font-weight: bold;
+
+}
+input{
+box-sizing: border-box;
+font-family: inherit;
+line-height: 1.29;
+border-radius: 6px;
+outline-offset: -2px;
+width: 100;
+height: 30px;
+border-bottom: 1px solid #8d8d8d;
+background-color: #f4f4f4;
+padding: 0 16px;
+}

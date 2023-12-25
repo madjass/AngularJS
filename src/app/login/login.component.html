@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<ng-container>
+<div class="container">
+<div id = "centerText">
+<h1>{{title}}</h1>
+</div>
+<div>
+  <input id = "userBox" type="text" placeholder="UserName" [(ngModel)] = "userName">
+</div>
+<div>
+<input id = "pwdBox"type="password"  placeholder="Password" [(ngModel)] = "userPwd">
+</div>
+<div>
+  <button id = "buttonTxt"type="button" name="Login" (click)="callUserDB()"><span>Login</span></button>
+</div>
+</div>
+<div id= "welcome">
+<h2>{{greetings}}</h2>
+</div>
+<router-outlet></router-outlet>
+</ng-container>

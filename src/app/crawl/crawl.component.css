@@ -1,0 +1,62 @@
+#parent{
+position: fixed;
+width: 100%;
+}
+
+.tabs{
+  display: flex;
+  border-style: solid;
+  justify-content: center;
+  height: 40px;
+  padding: 2px;
+  left: 10;
+  border-width: 1px;
+  padding-bottom: 10px;
+  background-color: #f5f4e8;
+}
+
+#title{
+  position: absolute;
+  left: 10%;
+  color:#ff5d9e;
+  top: 2%;
+}
+
+.active{
+  background-color: #e3e3e3;
+}
+
+.main {
+  position: fixed;
+  left: 30%;
+  padding-top: 20px;
+
+}
+
+  .acct{
+    position: fixed;
+    left: 50%;
+    padding-top: 20px;
+
+  }
+  .search{
+    position: fixed;
+    left: 40%;
+    padding-top: 20px;
+
+  }
+
+  .login{
+    position: fixed;
+    left: 65%;
+    padding-top: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px;
+  }
+  a {
+    font-size: 30px;
+  }

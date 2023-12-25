@@ -1,0 +1,48 @@
+.searchBox{
+  position: fixed;
+  width: 40%;
+  left:27%;
+  padding: 50px;
+background-color: #ececec;
+top: 15%;
+border-radius: 30px;
+}
+
+.searchTxt{
+  width: 90%;
+position: relative;
+left: 4%;
+height: 20px;
+background-color: inherit;
+}
+.deck{
+  top: 220px;
+  position: relative;
+  width: 40%;
+  left: 30%;
+  height: 700px;
+  overflow: scroll;
+}
+.grid{
+  display: grid;
+grid-template-columns: repeat(auto-fill, 160px);
+grid-gap: 10px;
+}
+
+.productCards{
+  position: relative;
+left: 10%;
+border-radius: 10px;
+box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+width: 80%;
+height: 250px;
+overflow: hidden;
+background: #d6ec78;
+}
+
+.noDataMsg{
+  position: fixed;
+  left: 45%;
+  top: 28%;
+  color: red;
+}
