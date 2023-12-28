@@ -1,6 +1,8 @@
 <ng-container>
-  <div  id = "parent">
-<div class="tabs">
+<div  id = "parent">
+ <mat-card class="tab-card">
+ <div>
+  <div mat-card-avatar class="avatar"></div>
   <div id="title">
     <a>CRAWL</a>
   </div>
@@ -10,13 +12,14 @@
   <div class="search" [class.active] = "isSearchActive">
     <p (click)="search()">Search</p>
   </div>
-  <div class="acct">
+  <div class="acct" [class.active] ="isAcctActive">
     <p (click)="account()">Account</p>
   </div>
   <div class="login" [class.active] = "isLoginActive">
     <p (click)="login()">Login</p>
   </div>
-</div>
+ </div>
+</mat-card>
 <router-outlet></router-outlet>
 </div>
 </ng-container>

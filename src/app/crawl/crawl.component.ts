@@ -51,11 +51,13 @@ export class CrawlComponent implements OnInit {
 
   setTabActive(tab: string | undefined){
     if((tab !== undefined && tab !== "/")  && !(this.tabActive === tab)){
-    this.tabActive = tab;
+      console.log(tab);
+    this.tabActive = tab; 
     this.isMainActive = (tab?.includes("main") ? true : false) ;
     this.isLoginActive = (tab?.includes("login") ? true : false) ;
     this.isSearchActive = (tab?.includes("search") ? true : false) ;
-    this.isAcctActive = (tab?.includes("acct") ? true : false) ;
+    this.isAcctActive = (tab?.includes("account") ? true : false) ;
+    console.log(this.isAcctActive);
       }
   }
 

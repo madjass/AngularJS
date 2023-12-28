@@ -27,7 +27,7 @@ constructor(user: UserService, private router: Router){
 }
 
 authenticateUser(){
-  const user = this.userData?.find((user)=> user.userName === this.userName && user.password === this.userPwd );
+  const user = this.userData?.find((user)=> user.userName === this.userFormControl?.value && user.password === this.pwdFormControl?.value );
   if(user !== undefined){
     this.user1.setIsAuth();
     this.activeTab.emit("");

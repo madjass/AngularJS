@@ -5,6 +5,7 @@
   left: 40%;
   height: 400px;
   background-color: #d3d6db;
+  box-shadow: 5px 5px 5px #ff5d9e;
 }
 
 
@@ -58,6 +59,7 @@ left: 65px;
 width: 120px;
 /* border-radius: 4px; */
 background:#ff347f;
+color:#d3d6db;
   }
 
 

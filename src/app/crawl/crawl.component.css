@@ -3,52 +3,62 @@ position: fixed;
 width: 100%;
 }
 
-.tabs{
-  display: flex;
-  border-style: solid;
-  justify-content: center;
-  height: 40px;
-  padding: 2px;
-  left: 10;
-  border-width: 1px;
-  padding-bottom: 10px;
-  background-color: #f5f4e8;
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+.avatar{
+  position: fixed;
+left: 30px;
+top: 10px;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.tab-card{
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  background-color: #d3d6db;
+  box-shadow: 1px 1px 5px #ff5d9e;
 }
 
 #title{
   position: fixed;
-  left: 10%;
+  left: 100px;
   color:#ff5d9e;
-  top: 2%;
+  top: 15px;
+  font-weight:bold;
 }
 
 .active{
-  background-color: #e3e3e3;
+  background-color: #ff347f;
+  box-shadow: 1px 1px 5px black;
 }
 
 .main {
   position: fixed;
-  left: 30%;
+  left: 40%;
+  padding-top: 20px;
+
+}
+
+.search{
+  position: fixed;
+  left: 54%;
   padding-top: 20px;
 
 }
 
   .acct{
     position: fixed;
-    left: 50%;
+    left: 68%;
     padding-top: 20px;
-
-  }
-  .search{
-    position: fixed;
-    left: 40%;
-    padding-top: 20px;
-
   }
 
   .login{
     position: fixed;
-    left: 65%;
+    left: 85%;
     padding-top: 20px;
   }
 
