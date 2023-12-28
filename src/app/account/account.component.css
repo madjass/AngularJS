@@ -122,3 +122,11 @@ border-bottom: 1px solid #8d8d8d;
 background-color: #f4f4f4;
 padding: 0 16px;
 }
+input:required {
+  border-color: #e70000;
+}
+
+button:disabled{
+  opacity: 0.4;
+cursor: not-allowed;
+  }

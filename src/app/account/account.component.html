@@ -1,35 +1,35 @@
 <ng-container>
   <div class = "acctPage">
     <a id = "persInfo">Personal Information</a>
-    <form class = "acctForm" #f="ngForm" (ngSubmit)= "onSave(f.value)">
+    <form class = "acctForm" [formGroup]="form" (ngSubmit) = "onSave()">
       <div class = "fields">
         <div class = "row1">
-      <input name= "firstName" placeholder="First Name" id = "firstName" type= "text" ngModel>
-      <input name= "lastName" placeholder="Last Name" id = "lastName" type= "text" ngModel>
+      <input formControlName= "firstName" placeholder="First Name" id = "firstName"  type= "text"  pattern = "[a-zA-Z]*">
+      <input formControlName= "lastName" placeholder="Last Name"  id = "lastName" type= "text"  pattern = "[a-zA-Z]*" >
       </div>
       <div class = "row2">
-      <input name= "email" placeholder="Email" id = "email" type= "email" ngModel>
+      <input formControlName= "email" placeholder="Email" id = "email" type= "email" >
       </div>
       <div class = "row3">
-      <input name= "address" placeholder="Address" id = "address" type= "text" ngModel>
-      <input name= "apt" placeholder="Apt #" id = "apt" type= "number" ngModel>
+      <input formControlName= "address" placeholder="Address" id = "address" type= "text" pattern = "[a-zA-Z0-9]*">
+      <input formControlName= "apt" placeholder="Apt #" id = "apt" type= "number"  pattern = "[0-9]*" ngModel>
       </div>
       <div class = "row4">
-      <input name= "city" placeholder="City" id = "city" type= "text" ngModel>
-      <input name= "state" placeholder="State" id = "state" type= "text" ngModel>
-      <input name= "zipCode" placeholder="Zip Code" id = "zipCd" type= "number" ngModel>
+      <input formControlName= "city" placeholder="City"  id = "city" type= "text" pattern = "[a-zA-Z]*">
+      <input formControlName= "state" placeholder="State" id = "state" type= "text" pattern = "[a-zA-Z]*">
+      <input formControlName= "zipCode" placeholder="Zip Code" id = "zipCd" type= "number" pattern = "[0-9]*" ngModel>
       </div>
       <div class = "row5">
-      <select placeholder="Gender" id = "gender" name= "gender" ngModel>
+      <select placeholder="Gender" id = "gender" formControlName= "gender">
         <option value = ""><a>Gender</a></option>
         <option value = "Male"><a>M</a></option>
         <option value = "Female"><a>F</a></option>
         </select>
-      <input name= "dob" placeholder="DOB(dd/mm/yyyy)" id = "dob" type= "text" ngModel>
-      <input name= "phone" placeholder="Phone #" id = "phone" type= "number" ngModel>
+      <input formControlName= "dob" placeholder="DOB(dd/mm/yyyy)" id = "dob" type= "text">
+      <input formControlName= "phone" placeholder="Phone #" id = "phone" type= "tel" ngModel>
       </div>
       </div>
-      <button type = "submit">Save</button>
+      <button [disabled]="!form.valid" type = "submit">Save</button>
     </form>
   </div>
 </ng-container>

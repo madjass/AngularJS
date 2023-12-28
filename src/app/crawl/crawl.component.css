@@ -16,7 +16,7 @@ width: 100%;
 }
 
 #title{
-  position: absolute;
+  position: fixed;
   left: 10%;
   color:#ff5d9e;
   top: 2%;
