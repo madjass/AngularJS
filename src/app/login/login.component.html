@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <ng-container>
-<div class="container">
-<div id = "centerText">
-<h1>{{title}}</h1>
-</div>
+  <mat-card class="login-card">
+    <div class = "centerBlock">
+    <mat-card-title class = "mat-title">{{title}}</mat-card-title>
+<form>
+<mat-form-field class="form-center">
+  <input matInput type="text" placeholder="UserName" [formControl]="userFormControl">
+  @if (userFormControl.hasError('required')) {
+       <mat-error class = "mat-form-error" id= "user-error"> is required</mat-error>
+   }
+</mat-form-field>
+</form>
+<form>
+<mat-form-field class = "form-center">
+<input matInput type="password"  placeholder="Password" [formControl]="pwdFormControl">
+@if (pwdFormControl.hasError('required')) {
+     <mat-error class = "mat-form-error" id= "pwd-error"> is required</mat-error>
+ }
+</mat-form-field>
+</form>
 <div>
-  <input id = "userBox" type="text" placeholder="UserName" [(ngModel)] = "userName">
-</div>
-<div>
-<input id = "pwdBox"type="password"  placeholder="Password" [(ngModel)] = "userPwd">
-</div>
-<div>
-  <button id = "buttonTxt"type="button" name="Login" (click)="callUserDB()"><span>Login</span></button>
+  <button mat-raised-button [disabled] = "!userFormControl.valid || !pwdFormControl.valid " id = "buttonTxt"type="button" name="Login" (click)="authenticateUser()"><span>Login</span></button>
 </div>
 </div>
-<div id= "welcome">
-<h2>{{greetings}}</h2>
-</div>
+<mat-card-footer id = "error">
+{{greetings}}
+</mat-card-footer>
+</mat-card>
 <router-outlet></router-outlet>
 </ng-container>

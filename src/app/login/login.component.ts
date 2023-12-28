@@ -2,7 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { UserService } from '../service/user.service';
 import { UserDto } from "../dto/user-dto";
 import { Router } from '@angular/router';
-
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,7 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   @Output() activeTab  = new EventEmitter();
-public title = 'Crawl Login';
+
+  userFormControl = new FormControl('', Validators.required);
+  pwdFormControl = new FormControl('', Validators.required);
+   title = 'Login';
 public userName!:string;
 public userPwd!:string;
        greetings = "";
@@ -23,9 +26,7 @@ constructor(user: UserService, private router: Router){
   this.user1 = user;
 }
 
-callUserDB(){
-  //later check for empty fields
-
+authenticateUser(){
   const user = this.userData?.find((user)=> user.userName === this.userName && user.password === this.userPwd );
   if(user !== undefined){
     this.user1.setIsAuth();
@@ -34,8 +35,6 @@ callUserDB(){
   }else{
     this.greetings = "Please try again!";
   }
-
 }
-
 
 }

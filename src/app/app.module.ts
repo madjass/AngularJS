@@ -17,6 +17,9 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { AccountComponent } from './account/account.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -38,7 +41,10 @@ import { AccountComponent } from './account/account.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [UserService,ProductService, {provide:LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
