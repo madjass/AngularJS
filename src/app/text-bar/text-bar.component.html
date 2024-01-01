@@ -1,5 +1,7 @@
 <ng-container>
-  <div class = "txtBar">
-<input type="text" class = "inputTxt" placeholder="What's in your mind..." [(ngModel)] = "userText" (keyup.enter) = "userTextHandler()">
-  </div>
+  <mat-card  class = "txtBar">
+    <div mat-card-avatar class="avatar"></div>
+<input matInput type="text" class = "inputTxt" placeholder="What's in your mind..." [(ngModel)] = "userText">
+<button mat-raised-button id = "button-post" type="button" name="post"(click) = "userTextHandler()"><a>Post</a></button>
+  </mat-card >
 </ng-container>

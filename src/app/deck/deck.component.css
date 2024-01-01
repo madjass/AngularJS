@@ -1,9 +1,15 @@
 .deck{
   position: fixed;
-  top: 25%;
+  top: 30%;
   left: 30%;
-  height: 400px;
-  width: 510px;
-  background: #7dd87d; 
-  border-radius: 50px;
+  height: 100%;
+  width: 500px;
+  background: #d3d6db;
+  box-shadow: 1px 1px 1px #ff5d9e;
+}
+
+.flex-cards{
+display: flex;
+flex-direction: column;
+gap: 6px;
 }

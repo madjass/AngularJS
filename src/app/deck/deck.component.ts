@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { PostDto } from "../dto/post-dto";
+import { PostService } from '../service/post.service';
 
 @Component({
   selector: 'app-deck',
@@ -7,7 +9,12 @@ import { Component, Input } from '@angular/core';
 })
 export class DeckComponent {
 
-@Input()  userPosts?: string[] ;
+@Input()  userPosts?: PostDto[] ;
+postServ?:PostService;
 
+
+constructor(postSrv:PostService){
+  this.postServ = postSrv;
+}
 
 }

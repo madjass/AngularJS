@@ -1,7 +1,9 @@
 <ng-container>
-<div class="deck">
+<mat-card class="deck">
+  <div class = "flex-cards">
 <app-card *ngFor ="let post of userPosts"
-[userTxt] = "post"
+[postDto] = "post"
 ></app-card>
 </div>
+</mat-card>
 </ng-container>

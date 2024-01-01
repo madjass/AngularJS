@@ -38,27 +38,27 @@ top: 10px;
 
 .main {
   position: fixed;
-  left: 40%;
+  left: 30%;
   padding-top: 20px;
 
 }
 
 .search{
   position: fixed;
-  left: 54%;
+  left: 40%;
   padding-top: 20px;
 
 }
 
   .acct{
     position: fixed;
-    left: 68%;
+    left: 50%;
     padding-top: 20px;
   }
 
   .login{
     position: fixed;
-    left: 85%;
+    left: 70%;
     padding-top: 20px;
   }
 

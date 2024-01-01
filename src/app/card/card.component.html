@@ -1,7 +1,20 @@
 <ng-container>
-<div class = "cards">
+<mat-card class = "cards">
+<div mat-card-avatar class="avatar"></div>
+<mat-card-title class= "card-title">
+<div id = "user">John1234</div>
+<div id = "time">{{postDto?.createdDate}}</div>
+</mat-card-title>
+<mat-card-content class = "card-content">
   <p>
-{{userTxt}}
+{{postDto?.post}}
 </p>
-</div>
+</mat-card-content>
+<mat-card-footer class = "card-footer">
+<button mat-icon-button (click) = "addLike()">
+  <mat-icon>favorite</mat-icon>
+</button>
+<div *ngIf = "postDto?.likes !== 0" id = "likes">{{postDto?.likes}}</div>
+</mat-card-footer>
+</mat-card>
 </ng-container>

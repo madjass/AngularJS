@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { PostDto } from "../dto/post-dto";
+import { PostService } from '../service/post.service';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +9,15 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
 
-@Input()  userTxt?: string;
- //userTxt = "";
+@Input()  postDto?: PostDto;
+  postSrv: PostService;
 
+  constructor(postServ: PostService){
+    this.postSrv = postServ;
+  }
+
+  addLike(){
+  this.postDto?.addLike();
+  this.postSrv.updateLikes(this.postDto);
+  }
 }

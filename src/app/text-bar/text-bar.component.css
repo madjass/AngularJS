@@ -2,17 +2,42 @@
 position: fixed;
 top: 15%;
 left: 30%;
+width: 500px;
+height: 80px;
+background-color: #d3d6db;
 }
 
 .inputTxt{
-  height: 30px;
-  width: 500px;
-  border-radius: 10px;
-  border: 3px solid dodgerBlue;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  height: 25px;
+  width: 400px;
+  border: 2px solid #ff347f;
 }
 
 ::placeholder{
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+}
+
+.avatar{
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  margin: 0px;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+#button-post{
+position: absolute;
+bottom: 7px;
+height: 18px;
+right: 22px;
+margin: 0px;
+background-color: #ff347f;
+box-shadow: 3px 3px 3px #ff5d9e;
+}
+a {
+  color: #d3d6db;
 }
